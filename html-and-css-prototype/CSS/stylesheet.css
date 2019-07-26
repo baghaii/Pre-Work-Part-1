@@ -53,6 +53,7 @@ progress[value] {
 	-webkit-appearance: none;
 	border: 1px solid #eaeaea;
 	color: #EF5F3C;
+	background-color: #FFF; /* Get color of incomplete area right on Firefox */
 	height: 12px;
 	width: 260px;
 	margin: auto;
@@ -88,7 +89,6 @@ progress::-moz-progress-bar { background: #EF5F3C; }
 
 .gray_box {
 	border-radius: 2px;
-	height: 40px;
 	width: 260px;
 	margin: auto;
 	background-color: #777;
