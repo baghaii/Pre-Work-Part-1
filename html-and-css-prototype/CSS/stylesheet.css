@@ -49,14 +49,17 @@ p {
    Progress has some potential downfalls because different browsers support this in
    different ways. */
 
+.progress_wrap {
+	margin: auto;
+	width: 260px;
+}
+
 progress[value] {
-	-webkit-appearance: none;
 	border: 1px solid #eaeaea;
 	color: #EF5F3C;
 	background-color: #FFF; /* Get color of incomplete area right on Firefox */
 	height: 12px;
 	width: 260px;
-	margin: auto;
 }
 
 progress::-webkit-progress-bar{ background: #FFF; }
