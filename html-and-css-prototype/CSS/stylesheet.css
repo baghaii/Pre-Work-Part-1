@@ -131,6 +131,7 @@ progress::-moz-progress-bar { background: #EF5F3C; }
 
 input {
 	font-weight: 700;
+	border: 1px solid #eaeaea;
 }
 
 /*
