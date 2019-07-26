@@ -40,3 +40,141 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*
+   Progress has some potential downfalls because different browsers support this in
+   different ways. */
+
+progress[value] {
+	-webkit-appearance: none;
+	border: 1px solid #eaeaea;
+	color: #EF5F3C;
+	height: 12px;
+	width: 260px;
+	margin: auto;
+}
+
+progress::-webkit-progress-bar{ background: #FFF; }
+progress::-webkit-progress-value { background: #EF5F3C; }
+progress::-moz-progress-bar { background: #EF5F3C; }
+
+.parent {
+	display: flex;
+	flex-flow: column;
+	font-size: 12px;
+}
+
+.flex_row {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.flex_row2 {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	width: 260px;
+	height: 60px;
+	padding-top: 10px;
+	margin: auto;
+}
+
+.gray_box {
+	border-radius: 2px;
+	height: 40px;
+	width: 260px;
+	margin: auto;
+	background-color: #777;
+	color: #FFF;
+	padding: 10px 20px 10px 20px;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	text-align: center;
+}
+
+/*
+   I made a triangle using these tips.
+   https://css-tricks.com/snippets/css/css-triangle/
+ */
+.arrow_down {
+	position: relative;
+	left: 90px;
+	width: 0;
+	height: 0;
+	margin: auto;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 7px solid #777;
+	padding-bottom: 3px;
+}
+
+.border_box {
+	margin: auto;
+	width: 260px;
+	border: 1px solid #eaeaea;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #777;
+}
+
+.orange_text {
+	color: #EF5F3C;
+	font-weight: 700;
+}
+
+/*
+This could be better. I went by this example. The $ and text are not aligned on a baseline.
+https://stackoverflow.com/questions/34985347/how-can-i-print-a-dollar-symbol-insideor-before-the-input-box
+*/
+.dollar{
+	display:inline-block;
+	position: relative;
+}
+
+.dollar:before {
+	position: absolute;
+	content: "$";
+	font-weight: 700;
+	left: 10px;
+	top: 12px;
+}
+
+.dollar #amount {
+	width: 100px;
+	padding: 10px 10px 10px 20px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+#submit {
+	border-radius: 2px;
+	border-color: #1CBC2C;
+	width: 100px;
+	color: #FFF;
+	background-color: #1CBC2C;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+#save {
+	color: #777;
+	font-weight: 700;
+	width: 120px;
+}
+
+#tell {
+	color: #777;
+	font-weight: 700;
+	width: 120px;
+}
+
+.blue_text {
+	color: #20A1D4;
+}

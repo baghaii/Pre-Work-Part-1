@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML/CSS Prototype</title>
-    <link rel="stylesheet" href="CSS/stylesheet.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Recreate this using HTML &amp; CSS</h1>
-      <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
+<head>
+  <meta charset="utf-8">
+  <title>HTML/CSS Prototype</title>
+  <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Recreate this using HTML &amp; CSS</h1>
+    <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
+  </div>
+
+  <!-- Your code goes here -->
+  <div class = "parent">
+    <div class="gray_box">
+      <strong>$167</strong> still needed for this project
     </div>
-
-    <!-- Your code goes here -->
-
-
-
+    <div class="arrow_down"></div>
+    <progress max="100" value="75"></progress>
+    <div class="border_box">
+      <p><span class="orange_text">Only 3 days left</span> to fund this project.</p>
+      <p>Join the <strong>42</strong> other donors who have already supported
+        this project. Every dollar helps.</p>
+        <form class="flex_row">
+          <div class="dollar"><input type="number" id="amount" name="amount" value="50"></div>
+          <input type="submit" id="submit" name="submit" value="Give Now">
+        </form>
+        <p class="blue_text"><em>Why give $50?</em></p>
+      </div>
+      <form class="flex_row2">
+        <input type="submit" id="save" name="save" value="Save for later">
+        <input type="submit" id="tell" name="tell" value="Tell your friends">
+      </form>
+    </div>
   </body>
-</html>
+  </html>
